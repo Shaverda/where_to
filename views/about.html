@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>where to?</title>
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="1up_0NLXLf4DFxm34CbnKlBedGQfA6VjOvkiSkY6oWw" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Meyer Reset-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body class="blue-grey lighten-5">
+    <!--NAV BAR-->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="/about">About</a></li>
+        <li class="divider"></li>
+        <li><a href="/contact">Contact</a></li>
+        <li class="divider"></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper white">
+                <a id="logo-container" href="/" class="brand-logo"><img class="whereto-logo" src="assets/images/whereToLogo-small.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" data-activates="dropdown1"><i id="menu-icon" class="material-icons">menu</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- ========= BODY  =========  -->
+    <!-- TECHNOLOGIES USED -->
+    <div class="container">
+        <div class="about-body white">
+            <div class="about-title">
+                <h1><strong>An Overview of the Project</strong></h1>
+            </div>
+            <div class="concept">
+                <h3>Application Concept</h3>
+                <p><strong>where to?</strong> allows the user to view the average salary of their occupation (or desired occupation) in major cities throughout the US. The user will also be able to view how these salaries compare to each city’s cost of living. This “bang for your buck” ratio is displayed on a heatmap, allowing the user to make an informed and strategic decision about where to move.</p>
+                <br />
+                <p>In addition to finding your next home based on your occupation, <strong>where to?</strong> will allow users to compare the following data for two cities of their choice:</p>
+                <br>
+                <ul class="browser-default">
+                    <li>Consumer Price Index</li>
+                    <br />
+                    <li>Cost of Living + Rent Index</li>
+                    <br />
+                    <li>Restaurant Price Index</li>
+                    <br />
+                    <li>Rent Index</li>
+                    <br />
+                    <li>Groceries Index</li>
+                    <br />
+                    <li>Local Purchasing Power</li>
+                </ul>
+                <br />
+                <br />
+                <img src="assets/images/homepage.PNG" height="200" width="400" />
+                <img src="assets/images/map.PNG" height="200" width="400"/>
+                <img src="assets/images/charts.PNG" height="200" width="400"/>
+                <img src="assets/images/formula.PNG" height="200" width="400"/>
+            </div>
+            <hr>
+            <div class="motivation">
+                <h3>Motivation Behind It</h3>
+                <p>D3 is a popular data visualization library that is used by companies such as The New York Times. Plus, it looked like a lot of fun! We wanted to challenge ourselves to learn this powerful framework well enough to make something useful.</p>
+                <br>
+                <p>Here are some examples of what D3 can do:</p>
+                <br>
+                <div id="d3examples">
+                    <a href="http://www.nytimes.com/interactive/2013/02/20/movies/among-the-oscar-contenders-a-host-of-connections.html?_r=0">Connections Among Oscar Contenders</a>
+                    <br>
+                    <br>
+                    <a href="https://piratepeel.github.io/sportskills.html">Sports Statistics</a>
+                    <br>
+                    <br>
+                    <a href="http://bl.ocks.org/mbostock/1153292">Mobile Patent Lawsuits</a>
+                </div>
+            </div>
+            <hr>
+            <div class="design">
+                <h3>Design Process</h3>
+                <ul class="browser-default"> 
+                <li><strong>where to?</strong> uses the MVC design structure.</li>
+                <br>
+                <li>It uses three different tables and left joins them to get all of the data needed.</li>
+                <br>
+                <li>Materialize was used for the grid and sleek components.</li>
+                <br>
+                <li>Photoshop and Illustrator were used to create our logo and edit photos of the cities to use in the center of the donut charts</li>
+                <br>
+                <li>The images courtesy of unsplash.com.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="technologies">
+                <h3>Technologies Used</h3>
+                <div class="tech-logos">
+                    <a><img class="d3-logo" src="assets/images/d3.png" height="200" width="200"></a>
+                </div>
+                <h4>D3</h4>
+                <p>"D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document."</p>
+                <h4>MySQL/ Amazon Web Services</h4>
+                <p>2015 salary data pulled from U.S. Bureau of Labor Statistics: https://www.bls.gov/developers/</p>
+                <br>
+                <p>2015 CPI data pulled from Numbeo: https://www.numbeo.com/cost-of-living/rankings.jsp</p>
+                <h4>Sequelize and Sequelize-Auto </h4>
+                <p>We used sequelize orm, but our tables were created before the application. Sequelize-Auto made it easy to generate our models based on our already existing tables.</p>
+            </div>
+            <hr>
+            <div class="future">
+                <h3>Future Development</h3>
+                <ul class="browser-default">
+                    <li>Implement the "I'm feeling lucky" button</li>
+                    <br>
+                    <li>Make the app compatible with and scalable on mobile devices</li>
+                    <br>
+                    <li>We need to expand the amount of data in the database (e.g. more cities included)</li>
+                    <br>
+                    <li>Need to come up with a more efficient system of database management</li>
+                    <br>
+                    <li>Add an api link to Bureau of Labor Statistics to automatically update the data</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--JS Libraries-->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--MATERIALIZE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="assets/js/views.js"></script>
+</body>
+
+</html>
